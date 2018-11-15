@@ -1,16 +1,12 @@
 {
-  "name": "@brianmmcclain/knative-buildpack-demo",
+  "name": "@gswk/square-sample",
   "private": true,
   "version": "1.0.0",
-  "description": "Demo of the Knative Buildpack Build Template",
-  "main": "hello.js",
+  "description": "projectriff square sample",
+  "main": "square.js",
   "scripts": {
-    "start": "node hello.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Brian McClain",
-  "license": "Apache-2.0",
-  "dependencies": {
-    "express": "^4.16.3"
-  }
+  "author": "Bryan Friedman",
+  "license": "Apache-2.0"
 }
