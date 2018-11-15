@@ -16,9 +16,9 @@ spec:
           name: buildpack
           arguments:
           - name: IMAGE
-            value: docker.io/gswk/knative-function-demo:lates
-	        - name: BUILDPACK_ORDER
-	          value: https://github.com/projectriff/node-function-invoker.git#buildpack
+            value: docker.io/gswk/knative-function-demo:latest
+          - name: BUILDPACK_ORDER
+            value: https://github.com/projectriff/node-function-invoker.git#buildpack
           - name: SKIP_DETECT
             value: "true"
       revisionTemplate:
