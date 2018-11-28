@@ -13,15 +13,14 @@ spec:
             url: https://github.com/gswk/knative-function-demo.git
             revision: master
         template:
-          name: buildpack
+          name: buildpacks-cnb
           arguments:
           - name: IMAGE
             value: docker.io/gswk/knative-function-demo:latest
-          - name: BUILDPACK_ORDER
-            value: https://github.com/projectriff/node-function-invoker.git#buildpack
-          - name: SKIP_DETECT
-            value: "true"
       revisionTemplate:
+        metadata:
+          labels:
+            knative.dev/type: function
         spec:
           container:
             image: docker.io/gswk/knative-function-demo:latest
