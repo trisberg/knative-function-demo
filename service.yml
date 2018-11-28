@@ -23,5 +23,5 @@ spec:
             knative.dev/type: function
         spec:
           container:
-            image: docker.io/gswk/knative-function-demo:latest
+            image: docker.io/gswk/knative-function-square-demo:latest
             imagePullPolicy: Always
