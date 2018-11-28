@@ -16,7 +16,7 @@ spec:
           name: buildpacks-cnb
           arguments:
           - name: IMAGE
-            value: docker.io/gswk/knative-function-demo:latest
+            value: docker.io/gswk/knative-function-square-demo:latest
       revisionTemplate:
         metadata:
           labels:
